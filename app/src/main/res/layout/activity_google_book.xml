@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".BookDetailActivity">
+
+
+
+
+    <ImageView
+        android:id="@+id/google_poster"
+        android:contentDescription="@string/picture"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="30dp" />
+
+
+    <TextView
+        android:id="@+id/google_txtTitle"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/google_poster"
+        android:layout_toEndOf="@+id/google_poster"
+        android:textSize="20sp"
+        android:textColor="@color/bookTitle"
+        tools:text="Test title"
+        android:maxLines="1"
+        android:ellipsize="end"/>
+
+    <TextView
+        android:id="@+id/google_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/google_txtTitle"
+        android:layout_alignStart="@+id/google_txtTitle"
+        android:layout_marginTop="10dp"
+        android:text="@string/year"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/google_txtYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/google_year"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/google_year"
+
+        tools:text="Test year" />
+
+    <TextView
+        android:id="@+id/google_genre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/google_year"
+        android:layout_alignStart="@+id/google_year"
+        android:layout_marginTop="10dp"
+        android:text="@string/genre"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/google_txtGenre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/google_genre"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/google_genre"
+        android:ellipsize="end"
+        android:maxLines="1"
+        tools:text="Test year" />
+
+    <TextView
+        android:id="@+id/google_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/google_genre"
+        android:layout_alignStart="@+id/google_genre"
+        android:layout_marginTop="10dp"
+        android:text="@string/author"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/google_txtAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/google_author"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/google_author"
+        android:ellipsize="end"
+        android:maxLines="1"
+        tools:text="Test Author" />
+
+    <TextView
+        android:id="@+id/google_isbn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/google_author"
+        android:layout_alignStart="@+id/google_author"
+        android:layout_marginTop="10dp"
+        android:text="@string/isbn"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/google_txtIsbn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/google_isbn"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/google_isbn"
+        tools:text="Test ISBN" />
+
+    <TextView
+        android:id="@+id/google_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_alignStart="@+id/google_poster"
+        android:layout_below="@+id/google_poster"
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="@string/book_detail" />
+
+    <ScrollView
+        android:id="@+id/google_SCROLLER_ID"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:fillViewport="true"
+        android:layout_alignStart="@+id/google_detail"
+        android:layout_alignEnd="@+id/google_detail"
+        android:layout_below="@+id/google_detail"
+        android:layout_above="@+id/google_proposition">
+
+        <TextView
+            android:id="@+id/google_txtDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/google_proposition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/google_SCROLLER_ID"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="@string/send_your_proposition"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
+
+
+

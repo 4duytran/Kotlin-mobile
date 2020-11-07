@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".BookDetailActivity">
+
+
+    <ImageView
+        android:id="@+id/poster"
+        android:contentDescription="@string/picture"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="30dp" />
+
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/poster"
+        android:layout_toEndOf="@+id/poster"
+        android:textSize="20sp"
+        android:textColor="@color/bookTitle"
+        tools:text="Test title" />
+
+    <TextView
+        android:id="@+id/year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTitle"
+        android:layout_alignStart="@+id/txtTitle"
+        android:layout_marginTop="10dp"
+        android:text="@string/year"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/year"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/year"
+
+        tools:text="Test year" />
+
+    <TextView
+        android:id="@+id/genre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/year"
+        android:layout_alignStart="@+id/year"
+        android:layout_marginTop="10dp"
+        android:text="@string/genre"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtGenre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/genre"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/genre"
+        android:ellipsize="end"
+        android:maxLines="1"
+        tools:text="Test year" />
+
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/genre"
+        android:layout_alignStart="@+id/genre"
+        android:layout_marginTop="10dp"
+        android:text="@string/author"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/author"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/author"
+        android:ellipsize="end"
+        android:maxLines="1"
+        tools:text="Test Author" />
+
+    <TextView
+        android:id="@+id/isbn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/author"
+        android:layout_alignStart="@+id/author"
+        android:layout_marginTop="10dp"
+        android:text="@string/isbn"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtIsbn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/isbn"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/isbn"
+        tools:text="Test ISBN" />
+
+    <TextView
+        android:id="@+id/detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_alignStart="@+id/poster"
+        android:layout_below="@+id/poster"
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="@string/book_detail" />
+
+    <ScrollView
+        android:id="@+id/SCROLLER_ID"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:fillViewport="true"
+        android:layout_alignStart="@+id/detail"
+        android:layout_alignEnd="@+id/detail"
+        android:layout_below="@+id/detail">
+
+        <TextView
+            android:id="@+id/txtDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             />
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_collection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:scrollbars = "vertical"
+        android:src="@drawable/ic_add"
+        app:backgroundTint="@color/colorAccent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/del_collection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:scrollbars = "vertical"
+        android:src="@drawable/ic_del"
+        app:backgroundTint="@color/colorAccent" />
+
+
+
+</RelativeLayout>
+
+
+

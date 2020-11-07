@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">nestixBook</string>
+    <string name="no_result_found">NO RESULT FOUND</string>
+    <string name="picture">Piture</string>
+    <string name="year">Year:</string>
+    <string name="genre">Genre:</string>
+    <string name="author">Author:</string>
+    <string name="isbn">ISBN:</string>
+    <string name="book_detail">Book detail</string>
+    <string name="send_your_proposition">Send your proposition</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="don_t_have_account_register_here">Don\'t have account? Register here</string>
+    <string name="registration">Registration</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="create_account">Create account</string>
+    <string name="already_registered_login_here">Already Registered? Login here</string>
+    <string name="title">Title</string>
+    <string name="artist">Artist</string>
+    <string name="search">Search</string>
+    <string name="search_term">Search term</string>
+    <string name="genre_search">Genre</string>
+
+</resources>
